@@ -25,7 +25,7 @@
 ## ysoserial-cpp ( PoC )
 Implementation of object serializations an weaponizing in cpp similar functionalitity ( a lost day... than yoserial )
 
-    @GNU GPL3 License ( JennyLab OpenSource )
+GNU GPL3 License ( JennyLab OpenSource )
     
 
     * Build
