@@ -17,6 +17,20 @@ GNU GPL3 License ( JennyLab OpenSource )
 ```
 g++ -std=c++17 -O2 -o ysoserial-cpp ysoserial.cpp
 ```
+or
+
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+
+or
+
+```
+make
+```
 
 
 ### Payload inject execution commands abusing serialization
