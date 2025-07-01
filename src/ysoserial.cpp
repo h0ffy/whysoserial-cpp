@@ -4,7 +4,7 @@
     
 
     # Build
-     g++ -std=c++17 -O2 -o ysoserial-cpp java-payload-gen.cpp
+     g++ -std=c++17 -O2 -o ysoserial-cpp ysoserial.cpp
 
 
     * Payload inject execution commands abusing serialization
@@ -19,7 +19,7 @@
 
 
     # Code "ysoserial-cpp.cpp"
-        ysoserial.cpp   # JennyPonderation.cpp
+        ysoserial.cpp   # ysoserial-cpp
         ├── JavaSerialization   # Constants and types
         ├── JavaPayloadGen # Main class to make and object in C++ to serialize this serialization with provide and destination in seralize... Seria... Lize!!!
 
