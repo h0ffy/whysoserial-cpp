@@ -2,8 +2,8 @@
 
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -O2
-TARGET = ysoserial-cpp
-SOURCE = ysoserial-cpp.cpp
+TARGET = whysoserial-cpp
+SOURCE = whysoserial.cpp
 
 # Main rule
 all: $(TARGET)
