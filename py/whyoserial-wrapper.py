@@ -2,13 +2,13 @@ import subprocess
 import base64
 import json
 
-class YsoserialCpp:
+class WHYsoserialCpp:
     """
-    Python wrapper for ysoserial-cpp
+    Python wrapper for whysoserial-cpp
     Facilitates integration into pentesting tools
     """
 
-    def __init__(self, binary_path="./ysoserial-cpp"):
+    def __init__(self, binary_path="./whysoserial-cpp"):
         self.binary_path = binary_path
 
     def generate_payload(self, payload_type, command):
@@ -16,7 +16,7 @@ class YsoserialCpp:
         Generates a payload and returns the data in different formats
         """
         try:
-            # Run ysoserial-cpp
+            # Run whysoserial-cpp
             result = subprocess.run(
                 [self.binary_path, payload_type, command],
                 capture_output=True,
