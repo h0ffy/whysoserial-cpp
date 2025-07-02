@@ -3,7 +3,7 @@ import base64
 
 def generate_payload(payload_type, command):
     result = subprocess.run(
-        ['./ysoserial-cpp', payload_type, command],
+        ['./whysoserial-cpp', payload_type, command],
         capture_output=True, text=True
     )
     # Parse the output to get the Base64
